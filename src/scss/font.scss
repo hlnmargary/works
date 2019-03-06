@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Raleway-Thin';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Thin.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Italic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Italic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-ThinItalic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ThinItalic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-SemiBold.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Bold.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Regular.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Light.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Black.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-MediumItalic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-MediumItalic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBoldItalic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ExtraBoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-LightItalic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-LightItalic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-BoldItalic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-BoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ExtraLight.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Medium.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraLightItalic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ExtraLightItalic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBoldItalic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-SemiBoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-BlackItalic';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-BlackItalic.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ExtraBold.woff2') format('woff2'),
+      url('../assets/fonts/font-raleway/transfonter.org-20190222-113312/Raleway-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
