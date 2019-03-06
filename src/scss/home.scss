@@ -26,7 +26,7 @@
     font-family: 'Raleway-Bold';
     font-size: 41px;
     color: rgb(0, 0, 0);
-    // text-shadow: 0 0 1px rgb(0, 0, 0);
+    text-shadow: 0 0 1px rgb(0, 0, 0);
     text-transform: uppercase;
     margin-left: calc(60% - 165px);
     @media (min-width: 830px) {
@@ -44,9 +44,17 @@
         }
       }
     }
-
     li {
       margin-bottom: 100px;
     }
   }
 };
+
+
+.projects__list {
+  li:hover {
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    padding-left: 10px;
+  }
+}
