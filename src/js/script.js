@@ -1,3 +1,4 @@
+
 import Rellax from "rellax";
 
 console.log('js-linked');
@@ -24,3 +25,19 @@ setTimeout(() => {
 setTimeout(() => {
   document.querySelector(".all").style.opacity = 1;
 }, 4500);
+
+
+
+
+
+var AS = document.querySelector('.AS');
+var SoC = document.querySelector('.SoC');
+var bg = document.querySelector('.project__img');
+
+AS.addEventListener('mouseover', function () {
+  bg.src = "assets/img/AlsoS.svg";
+});
+
+SoC.addEventListener('mouseover', function () {
+  bg.src = "assets/img/LOGO.jpg";
+});

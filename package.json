@@ -22,6 +22,8 @@
     "sass": "^1.17.0"
   },
   "dependencies": {
-    "rellax": "^1.8.0"
+    "rellax": "^1.8.0",
+    "waypoint": "^0.2.8",
+    "waypoints": "^4.0.1"
   }
 }

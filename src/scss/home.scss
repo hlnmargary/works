@@ -1,13 +1,12 @@
 .all {
   opacity: 0;
-  cursor: url(../assets/img/zizicursor.png) 0 0, auto;
+  cursor: url(../assets/img/zizicursor2.png) 0 0, auto;
+
 }
 
 .home{
   width: 100vw;
-  background-color:rgb(255, 255, 255);
-  position: relative;
-  
+
 }
 
 
@@ -25,7 +24,7 @@
     padding-top: 120px;
     font-family: 'Raleway-Bold';
     font-size: 41px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 0 0 1px rgb(0, 0, 0);
     text-transform: uppercase;
     margin-left: calc(60% - 165px);
@@ -35,12 +34,12 @@
       }
       @media (min-width: 950px) {
         ul {
-          margin-left: calc(30% - 165px);
+          margin-left: calc(25% - 165px);
         }
       }
       @media (min-width: 1250px) {
         ul {
-          margin-left: calc(20% - 165px);
+          margin-left: calc(15% - 165px);
         }
       }
     }
@@ -54,7 +53,27 @@
 .projects__list {
   li:hover {
     color: rgb(0, 0, 0);
+    text-shadow: none;
     font-size: 45px;
     padding-left: 10px;
+    cursor: url(../assets/img/zizicursor2.png) 0 0, auto;
+  }
+}
+
+.projects__background {
+  width: 100vw;
+top: 60px;
+}
+
+.projects__background {
+  width: 30%;
+  height: 40vh;
+  left: 45%;
+  top: 40%;
+  z-index: -2;
+  position: sticky;
+  opacity: 0.3;
+  img {
+   
   }
 }
