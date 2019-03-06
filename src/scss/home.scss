@@ -2,18 +2,17 @@
   opacity: 0;
   cursor: url(../assets/img/zizicursor2.png) 0 0, auto;
 
-}
+};
 
 .home{
   width: 100vw;
-
-}
+};
 
 
 .projects-section {
   background-color: white;
   width: 100vw;
-}
+};
 
 .projects {
   width: 70%;
@@ -58,22 +57,32 @@
     padding-left: 10px;
     cursor: url(../assets/img/zizicursor2.png) 0 0, auto;
   }
-}
+};
 
 .projects__background {
   width: 100vw;
 top: 60px;
-}
+};
 
 .projects__background {
-  width: 30%;
-  height: 40vh;
+  width: 50%;
+  height: 60vh;
   left: 45%;
-  top: 40%;
+  top: 20%;
   z-index: -2;
   position: sticky;
   opacity: 0.3;
+  overflow: hidden;
   img {
    
   }
+};
+
+.project__img {
+   width: 100%;
+};
+
+
+.unvisible {
+  display: none;
 }

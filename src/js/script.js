@@ -26,18 +26,22 @@ setTimeout(() => {
   document.querySelector(".all").style.opacity = 1;
 }, 4500);
 
+var imgArray = document.querySelectorAll('.project__img');
+var projectArray = document.querySelectorAll('.projects__list li');
 
+for (let i = 0; i < projectArray.length; i++) {
+  projectArray[i].addEventListener('mouseleave', function () {
+    console.log('test');
 
-
-
-var AS = document.querySelector('.AS');
-var SoC = document.querySelector('.SoC');
-var bg = document.querySelector('.project__img');
-
-AS.addEventListener('mouseover', function () {
-  bg.src = "assets/img/AlsoS.svg";
-});
-
-SoC.addEventListener('mouseover', function () {
-  bg.src = "assets/img/LOGO.jpg";
-});
+    for (let j = 0; j < imgArray.length; j++) {
+      imgArray[j].classList.add('unvisible');
+    }
+  });
+  projectArray[i].addEventListener('mouseover', function () {
+    for (let j = 0; j < imgArray.length; j++) {
+      if (projectArray[i].dataset.name === imgArray[j].dataset.project) {
+        imgArray[j].classList.remove('unvisible');
+      }
+    }
+  });
+};
