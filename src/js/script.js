@@ -23,11 +23,12 @@ setTimeout(() => {
   document.querySelector(".face__scroll").style.opacity = 1;
 }, 4500);
 setTimeout(() => {
-  document.querySelector(".all").style.opacity = 1;
+  document.querySelector(".all").style.overflow = "initial";
 }, 4500);
 
 var imgArray = document.querySelectorAll('.project__img');
 var projectArray = document.querySelectorAll('.projects__list li');
+var bgcontainer = document.querySelector('.projects__background');
 
 for (let i = 0; i < projectArray.length; i++) {
   projectArray[i].addEventListener('mouseleave', function () {
@@ -41,6 +42,24 @@ for (let i = 0; i < projectArray.length; i++) {
     for (let j = 0; j < imgArray.length; j++) {
       if (projectArray[i].dataset.name === imgArray[j].dataset.project) {
         imgArray[j].classList.remove('unvisible');
+      }
+    }
+  });
+};
+
+for (let i = 0; i < projectArray.length; i++) {
+  projectArray[i].addEventListener('click', function () {
+    console.log('test');
+    for (let j = 0; j < imgArray.length; j++) {
+      imgArray[j].classList.add('unvisible');
+    }
+  });
+
+  projectArray[i].addEventListener('click', function () {
+    for (let j = 0; j < imgArray.length; j++) {
+      if (projectArray[i].dataset.name === imgArray[j].dataset.project) {
+        imgArray[j].classList.remove('unvisible');
+
       }
     }
   });
