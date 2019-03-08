@@ -49,16 +49,15 @@ for (let i = 0; i < projectArray.length; i++) {
 
 for (let i = 0; i < projectArray.length; i++) {
   projectArray[i].addEventListener('click', function () {
-    console.log('test');
     for (let j = 0; j < imgArray.length; j++) {
-      imgArray[j].classList.add('unvisible');
+      imgArray[j].classList.add('onclick');
     }
   });
 
   projectArray[i].addEventListener('click', function () {
     for (let j = 0; j < imgArray.length; j++) {
       if (projectArray[i].dataset.name === imgArray[j].dataset.project) {
-        imgArray[j].classList.remove('unvisible');
+        imgArray[j].classList.remove('onclick');
 
       }
     }

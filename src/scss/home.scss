@@ -36,7 +36,7 @@
 
 .all {
   overflow: hidden;
-  cursor: url(../assets/img/zizicursor2.png) 0 0, auto;
+  // cursor: url(../assets/img/cursorharrow.png) 0 0, auto;
 
 };
 
@@ -81,7 +81,7 @@
     text-shadow: none;
     font-size: 45px;
     padding-left: 10px;
-    cursor: url(../assets/img/zizicursor2.png) 0 0, auto;
+    // cursor: url(../assets/img/cursorharrow.png) 0 0, auto;
   }
 };
 
@@ -111,4 +111,9 @@
   right: 20px;
   bottom: -2000px;
   
+}
+
+.onclick {
+  width: 100vw;
+  z-index: 6;
 }
