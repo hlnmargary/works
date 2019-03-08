@@ -1,3 +1,39 @@
+@keyframes translate {
+  from {
+    transform: translateX(300px);
+  } 
+  to {
+    transform: translateX(0px);    
+  }
+}
+
+@keyframes translate2 {
+  from {
+    transform: translateX(-300px);
+  } 
+  to {
+    transform: translateX(0px);    
+  }
+}
+
+@keyframes translate3 {
+  from {
+    transform: translateY(-300px);
+  } 
+  to {
+    transform: translateX(0px);    
+  }
+}
+
+@keyframes filter {
+  from {
+    filter: hue-rotate(230deg)
+  } 
+  to {
+    filter: initial;    
+  }
+}
+
 .all {
   overflow: hidden;
   cursor: url(../assets/img/zizicursor2.png) 0 0, auto;
@@ -32,6 +68,7 @@
     text-transform: uppercase;
     margin-left: calc(40% - 165px);
     li {
+      transition: all 0.6s;
       margin-bottom: 100px;
     }
   }
@@ -51,9 +88,9 @@
 
 .projects__background {
   width: 50%;
-  height: 60vh;
+  height: 65vh;
   left: 35%;
-  top: 20%;
+  top: 18%;
   z-index: -2;
   opacity: 0.5;
   overflow: hidden;
@@ -61,7 +98,8 @@
 };
 
 .project__img {
-   width: 100%;
+  animation: translate 0.4s;
+  height: 100%;
 };
 
 .unvisible {
