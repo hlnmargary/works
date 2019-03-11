@@ -21,6 +21,7 @@
 
 .all {
   overflow: hidden;
+  width: 100vw;
   // cursor: url(../assets/img/cursorharrow.png) 0 0, auto;
 
 };
@@ -43,7 +44,6 @@
   height: 100%;
   top: 200px;
   &__list{
-    height: 100vh;
     width: 330px;
     padding-top: 20px;
     font-family: 'Raleway-Bold';
@@ -62,11 +62,11 @@
   }
 };
 
-.lines-numbers {
-  display: flex;
-  width: 100vw;
-  z-index: -10;
-};
+// .lines-numbers {
+//   display: flex;
+//   width: 100vw;
+//   z-index: -10;
+// };
 
 .projects__numbers {
   font-family: 'Raleway-Medium';
