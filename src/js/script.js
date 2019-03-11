@@ -20,6 +20,9 @@ setTimeout(() => {
   document.querySelector(".face__text").style.opacity = 1;
 }, 2000);
 setTimeout(() => {
+  document.querySelector(".face__scroll").style.opacity = 0;
+}, 0);
+setTimeout(() => {
   document.querySelector(".face__scroll").style.opacity = 1;
 }, 4500);
 setTimeout(() => {
@@ -47,19 +50,22 @@ for (let i = 0; i < projectArray.length; i++) {
   });
 };
 
-for (let i = 0; i < projectArray.length; i++) {
-  projectArray[i].addEventListener('click', function () {
-    for (let j = 0; j < imgArray.length; j++) {
-      imgArray[j].classList.add('onclick');
-    }
-  });
+// for (let i = 0; i < projectArray.length; i++) {
+//   projectArray[i].addEventListener('click', function () {
+//     console.log('clickok');
 
-  projectArray[i].addEventListener('click', function () {
-    for (let j = 0; j < imgArray.length; j++) {
-      if (projectArray[i].dataset.name === imgArray[j].dataset.project) {
-        imgArray[j].classList.remove('onclick');
+//     for (let j = 0; j < imgArray.length; j++) {
+//       imgArray[j].classList.add('onclick');
+//     }
+//   });
 
-      }
-    }
-  });
-};
+//   projectArray[i].addEventListener('click', function () {
+//     console.log('clickok');
+//     for (let j = 0; j < imgArray.length; j++) {
+//       if (projectArray[i].dataset.name === imgArray[j].dataset.project) {
+//         imgArray[j].clarssList.remove('onclick');
+
+//       }
+//     }
+//   });
+// };
