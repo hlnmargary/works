@@ -13,9 +13,13 @@
 </head>
 
 <body>
-  <header class="loader rellax">
+  <header class="loader">
+    <div class="hidder"></div>
     <div class="face__scroll">
       <img src="../src/assets/img/SCROLL.png" alt="">
+    </div>
+    <div class="portfolio">
+      <img src="../src/assets/img/yr.svg" alt="">
     </div>
     <div class="face__text">
       <p> Hélène Margary,<br> <span class="job">
@@ -68,48 +72,41 @@
   </header>
   <main class="all">
     <section class="home">
-      <img class="side__project rellax" data-rellax-speed="8" src="../src/assets/img/MY PROJECTS.png" alt="">
       <div class="projects">
-        <ul class="projects__list">
-          <div class="lines-numbers">
+        <ul id="sideList" class="projects__list notclicked">
+          <div>
             <p class="projects__numbers">01</p>
-            <div class="projects__lines"></div>
+            <li data-name="banal">Banal</li>
           </div>
-          <li data-name="banal">Banal</li>
-          <div class="lines-numbers">
+          <div>
             <p class="projects__numbers">02</p>
-            <div class="projects__lines"></div>
+            <li data-name="alsosounds">Alsosounds</li>
           </div>
-          <li data-name="alsosounds">Alsosounds</li>
-          <div class="lines-numbers">
+          <div>
             <p class="projects__numbers">03</p>
-            <div class="projects__lines"></div>
+            <li data-name="runhetic">Runhetic</li>
           </div>
-          <li data-name="runhetic">Runhetic</li>
-          <div class="lines-numbers">
+          <div>
             <p class="projects__numbers">04</p>
-            <div class="projects__lines"></div>
+            <li data-name="hydrometeor">Hydrometeor</li>
           </div>
-          <li data-name="hydrometeor">Hydrometeor</li>
-          <div class="lines-numbers">
+          <div>
             <p class="projects__numbers">05</p>
-            <div class="projects__lines"></div>
+            <li data-name="socomptoir">SoComptoir</li>
           </div>
-          <li data-name="socomptoir">SoComptoir</li>
-          <div class="lines-numbers">
+          <div>
             <p class="projects__numbers">06</p>
-            <div class="projects__lines"></div>
+            <li data-name="booking">Booking</li>
           </div>
-          <li data-name="booking">Booking</li>
-          <div class="lines-numbers">
+          <div>
             <p class="projects__numbers">07</p>
-            <div class="projects__lines"></div>
+            <li data-name="properage">Properäge</li>
           </div>
-          <li data-name="properage">Properäge</li>
+
         </ul>
       </div>
       <div class="projects__container">
-        <div class="projects__background">
+        <div id="bg" class="projects__background">
           <img data-project="banal" class="project__img unvisible" src="../src/assets/img/banal-bg.png" alt="">
           <img data-project="alsosounds" class="project__img unvisible" src="../src/assets/img/alsosounds-bg.png"
             alt="">
@@ -120,6 +117,121 @@
             alt="">
           <img data-project="booking" class="project__img unvisible" src="../src/assets/img/booking-bg.png" alt="">
           <img data-project="properage" class="project__img unvisible" src="../src/assets/img/properage-bg.png" alt="">
+        </div>
+        <div id="presentations" class="pres__container">
+          <img class="side__project" src="../src/assets/img/MY PROJECTS.png" alt="">
+          <div class="arrowContainer">
+            <div class="arrowLeft">
+              <img src="../src/assets/img/arrowleft.svg" alt="">
+            </div>
+            <p>Projects</p>
+          </div>
+          <div data-pres="banal" class="mockup">
+            <div id="particles-js"></div>
+            <div class="count-particles"> <span></span></div>
+            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+            <div class="pres__text">
+              <div class="logo-container">
+                <img data-presImg="banal" src="../src/assets/img/banalogo.png" alt="">
+              </div>
+              <p data-presText="banal">Aliquam erat volutpat. Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum
+                primis in faucibus orci
+                luctus
+                et ultrices posuere cubilia Curae; Cras id sem eros.
+                Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus e</p>
+              <h4 data-presSkills="banal">HTML5 / SASS / JAVASCRIPT</h4>
+            </div>
+            <img data-presArtboard="banal" src="../src/assets/img/homepageBanal.png" alt="">
+          </div>
+          <!-- <div data-pres="Alsosounds" class="mockup">
+            <div class="pres__text">
+              <div class="logo-container">
+                <img data-presImg="Alsosounds" src="../src/assets/img/banalogo.png" alt="">
+              </div>
+              <p data-presText="Alsosounds">Aliquam erat volutpat. Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum
+                primis in faucibus orci
+                luctus
+                et ultrices posuere cubilia Curae; Cras id sem eros.
+                Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus e</p>
+              <h4 data-presSkills="Alsosounds">HTML5 / SASS / JAVASCRIPT</h4>
+            </div>
+            <img data-presArtboard="Alsosounds" src="../src/assets/img/homepageBanal.png" alt="">
+          </div>
+
+          <div data-pres="runhetic" class="mockup">
+            <div class="pres__text">
+              <div class="logo-container">
+                <img data-presImg="runhetic" src="../src/assets/img/banalogo.png" alt="">
+              </div>
+              <p data-presText="runhetic">Aliquam erat volutpat. Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum
+                primis in faucibus orci
+                luctus
+                et ultrices posuere cubilia Curae; Cras id sem eros.
+                Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus e</p>
+              <h4 data-presSkills="runhetic">HTML5 / SASS / JAVASCRIPT</h4>
+            </div>
+            <img data-presArtboard="runhetic" src="../src/assets/img/homepageBanal.png" alt="">
+          </div>
+
+          <div data-pres="hydrometeor" class="mockup">
+            <div class="pres__text">
+              <div class="logo-container">
+                <img data-presImg="hydrometeor" src="../src/assets/img/banalogo.png" alt="">
+              </div>
+              <p data-presText="hydrometeor">Aliquam erat volutpat. Pellentesque ut pulvinar ipsum. Vestibulum ante
+                ipsum
+                primis in faucibus orci
+                luctus
+                et ultrices posuere cubilia Curae; Cras id sem eros.
+                Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus e</p>
+              <h4 data-presSkills="hydrometeor">HTML5 / SASS / JAVASCRIPT</h4>
+            </div>
+            <img data-presArtboard="hydrometeor" src="../src/assets/img/homepageBanal.png" alt="">
+          </div>
+          <div data-pres="socomptoir" class="mockup">
+            <div class="pres__text">
+              <div class="logo-container">
+                <img data-presImg="socomptoir" src="../src/assets/img/banalogo.png" alt="">
+              </div>
+              <p data-presText="socomptoir">Aliquam erat volutpat. Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum
+                primis in faucibus orci
+                luctus
+                et ultrices posuere cubilia Curae; Cras id sem eros.
+                Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus e</p>
+              <h4 data-presSkills="socomptoir">HTML5 / SASS / JAVASCRIPT</h4>
+            </div>
+            <img data-presArtboard="socomptoir" src="../src/assets/img/homepageBanal.png" alt="">
+          </div>
+          <div data-pres="booking" class="mockup">
+            <div class="pres__text">
+              <div class="logo-container">
+                <img data-presImg="booking" src="../src/assets/img/banalogo.png" alt="">
+              </div>
+              <p data-presText="booking">Aliquam erat volutpat. Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum
+                primis in faucibus orci
+                luctus
+                et ultrices posuere cubilia Curae; Cras id sem eros.
+                Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus e</p>
+              <h4 data-presSkills="booking">HTML5 / SASS / JAVASCRIPT</h4>
+            </div>
+            <img data-presArtboard="booking" src="../src/assets/img/homepageBanal.png" alt="">
+          </div>
+          <div data-pres="propeage" class="mockup">
+            <div class="pres__text">
+              <div class="logo-container">
+                <img data-presImg="propeage" src="../src/assets/img/banalogo.png" alt="">
+              </div>
+              <p data-presText="propeage">Aliquam erat volutpat. Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum
+                primis in faucibus orci
+                luctus
+                et ultrices posuere cubilia Curae; Cras id sem eros.
+                Pellentesque ut pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus e</p>
+              <h4 data-presSkills="propeage">HTML5 / SASS / JAVASCRIPT</h4>
+            </div>
+            <img data-presArtboard="propeage" src="../src/assets/img/homepageBanal.png" alt="">
+          </div> -->
+
         </div>
       </div>
     </section>

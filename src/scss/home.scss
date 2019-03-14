@@ -19,30 +19,66 @@
   }
 }
 
+// Changes on click
+
+.notclicked {
+  transition: all 0.6s;
+  margin-left: 15%;
+  @include medium{
+    margin-left: 25%;
+  }
+}
+
+.clicked {
+  transition: all 0.6s;
+  margin-left: 5px;
+
+};
+
+// .existing {
+//   display: block;
+// }
+
 .all {
+  
   overflow: hidden;
   width: 100vw;
+  height: 200vh;
   // cursor: url(../assets/img/cursorharrow.png) 0 0, auto;
 
 };
 
+#myVideo {
+  z-index: -20;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  opacity: 0.6;
+}
+
 .home{
   width: 100vw;
-  padding-top: 180px;
+  padding-top: 30px;
   position: relative;
+  height: 100%;
+
 };
 
 
 .projects-section {
-  background-color: white;
   width: 100vw;
 };
 
 .projects {
   position: absolute;
   width: 70%;
-  height: 100%;
-  top: 200px;
+  height: 100vh;
+  top: 100px;
+  &__container{
+    position: relative;
+  }
   &__list{
     width: 330px;
     padding-top: 20px;
@@ -51,22 +87,20 @@
     color: rgb(255, 255, 255);
     text-shadow: 0 0 1px rgb(0, 0, 0);
     text-transform: uppercase;
-    margin-left: 15%;
     li {
       transition: all 0.6s;
       margin-bottom: 100px;
     }
-    @include medium{
-      margin-left: 30%;
-    }
   }
 };
 
-// .lines-numbers {
-//   display: flex;
-//   width: 100vw;
-//   z-index: -10;
-// };
+
+
+.lines-numbers {
+  display: flex;
+  width: 10vw;
+  z-index: -10;
+};
 
 .projects__numbers {
   font-family: 'Raleway-Medium';
@@ -90,6 +124,7 @@
 
 
 .projects__list {
+  opacity: 0.3;
   li:hover {
     color: rgb(0, 0, 0);
     text-shadow: none;
@@ -101,6 +136,7 @@
 
 
 .projects__background {
+  display: block;
   width: 100%;
   height: 70vh;
   left: 0;
@@ -131,7 +167,6 @@
   }
 };
 
-
 .project__img {
   animation: translate 0.4s;
   width: 100%;
@@ -151,6 +186,77 @@
   }
 };
 
-.onclick {
-  transform: scale(1,5);
-};
+
+//////////////////////////
+
+
+.pres__container {
+  overflow: hidden;
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  right: 10px;
+  // background-color: rgba(237, 254, 54, 0.297);
+  background-color: rgba(255, 255, 255, 0.486);
+  z-index: 10;
+
+}
+
+.pres__text {
+  width: 280px;
+  height: 100%;
+  font-family: 'Raleway-Medium';
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  justify-content: left;
+  margin-left: calc( 65% - 150px);
+  margin-top: 120px;
+  h4 {
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.mockup {
+  position: absolute;
+  justify-content: center;
+  border: solid 1px rgb(0, 0, 0);
+  top: 80px;
+  right: 30px;
+  width: 70vw;
+  height: 550px;
+  overflow-y:scroll; 
+  overflow-x:hidden;
+  // z-index: -5;
+  img {
+    width: 100%;
+  }
+}
+
+.logo-container {
+  margin-bottom: 30px;
+  img {
+    width: 150px;
+  }
+}
+
+.arrowContainer {
+  position: absolute;
+  display: flex;
+  height: 160px;
+  width: 300px;
+  bottom: 0px;
+  left: 10%;
+  p{
+    font-family: 'Raleway-bold';
+    font-size: 22px;
+    padding-top: 3px;
+    padding-left: 10px;
+  }
+}
+
+.arrowLeft {
+  width: 30px;
+}

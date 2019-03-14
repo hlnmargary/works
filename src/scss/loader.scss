@@ -15,6 +15,27 @@ transition: opacity 20s;
 height: 100vh;
 width: 100vw;
 position: relative;
+background-color: rgb(247, 255, 196);
+};
+
+.hidder {
+  position: absolute;
+  background-color: rgb(247, 255, 196);
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 20000;
+}
+
+.portfolio {
+  position: absolute;
+  right: 45px;
+  top: 60px;
+  width: 100px;
+ img {
+   width: 100%;
+ }
 };
 
 .face__container {
