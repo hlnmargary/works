@@ -38,6 +38,54 @@ var bgcontainer = document.querySelector('.projects__background');
 var projectList = document.querySelector('.projects__list');
 var projectContainer = document.querySelector('.projects__container');
 var presContainer = document.getElementById('presentations');
+var presArray = document.querySelectorAll('.mockup');
+var arrow = document.querySelector('.arrowContainer');
+
+for (let i = 0; i < projectArray.length; i++) {
+  projectArray[i].addEventListener('click', function () {
+    console.log('test3');
+    for (let h = 0; h < presArray.length; h++) {
+      if (presArray[h].dataset.pres === projectArray[i].dataset.name) {
+        console.log('test4');
+        presArray[h].classList.remove('unvisible');
+        arrow.style.display = "flex";
+        document.querySelector('.projects__list').classList.add('unvisible');
+        console.log('testarrow');
+      }
+    }
+  });
+};
+
+arrow.addEventListener('click', function () {
+  console.log('arrowok');
+  for (let h = 0; h < presArray.length; h++) {
+    presArray[h].classList.add('unvisible');
+    arrow.style.display = "none";
+    document.querySelector('.projects__list').classList.remove('unvisible');
+  }
+});
+
+
+// for (let i = 0; i < projectArray.length; i++) {
+//   projectArray[i].addEventListener('click', function () {
+//     console.log('test3');
+//     if (presContainer.style.display === "block") {
+//       presContainer.style.display = "none";
+//       presArray[h].classList.add('unvisible');
+//     } else {
+//       projectArray[i].addEventListener('click', function () {
+//         for (let h = 0; h < presArray.length; h++) {
+//           if (presArray[h].dataset.pres === projectArray.dataset.project) {
+//             presContainer.style.display = "block";
+//             presArray[h].classList.remove('unvisible');
+//           }
+//         }
+//       });
+//     }
+//   }
+//   )
+// };
+
 
 
 // Hover on projectList -> Background image change
@@ -70,7 +118,7 @@ for (let i = 0; i < projectArray.length; i++) {
       document.getElementById('sideList').classList.remove('notclicked');
       document.getElementById('sideList').classList.add('clicked');
       bgContainer.style.display = 'none';
-      projectArray.selectorText.replace(':hover', ':active');
+      // projectArray.selectorText.replace(':hover', ':active');
 
       // bgContainer.parentNode.removeChild(bgContainer);
     } else {

@@ -124,7 +124,7 @@
 
 
 .projects__list {
-  opacity: 0.3;
+  // opacity: 0.3;
   li:hover {
     color: rgb(0, 0, 0);
     text-shadow: none;
@@ -173,7 +173,9 @@
 };
 
 .unvisible {
+  transition: all 2.5s ease;
   display: none;
+  
 };
 
 .side__project {
@@ -190,7 +192,9 @@
 //////////////////////////
 
 
+
 .pres__container {
+  display: none;
   overflow: hidden;
   position: sticky;
   width: 100%;
@@ -198,8 +202,8 @@
   display: flex;
   right: 10px;
   // background-color: rgba(237, 254, 54, 0.297);
-  background-color: rgba(255, 255, 255, 0.486);
-  z-index: 10;
+  background-color: rgb(255, 255, 255);
+  z-index: -100;
 
 }
 
@@ -244,10 +248,11 @@
 
 .arrowContainer {
   position: absolute;
-  display: flex;
+  display: none;
+  z-index: 200;
   height: 160px;
   width: 300px;
-  bottom: 0px;
+  top: 37%;
   left: 10%;
   p{
     font-family: 'Raleway-bold';
@@ -259,4 +264,5 @@
 
 .arrowLeft {
   width: 30px;
-}
+
+};
