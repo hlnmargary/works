@@ -10,7 +10,25 @@
   }
 };
 
+.body {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.face__container {
+  position: absolute;
+  width: 120px;
+  left: calc(50% - 70px);
+  top: calc(30% - 80px);
+  svg {
+    width: 100%;
+  }
+};
+
+
 .header{
+  overflow: hidden;
+  width: 100%;
 font-family: 'Raleway';
 transition: opacity 20s;
 height: 100vh;
@@ -53,16 +71,6 @@ background-color: rgb(255, 255, 255);
  }
 };
 
-.face__container {
-  position: absolute;
-  width: 300px;
-  left: calc(50% - 150px);
-  top: calc(34% - 186px);
-  svg {
-    width: 100%;
-  }
-};
-
 .face__text{
   // transition: opacity 10s;
   // opacity: 0;
@@ -70,10 +78,10 @@ background-color: rgb(255, 255, 255);
   text-align: left;
   width: 250px;
   left: calc(50% - 120px);
-  top: 45%;
+  top: 50%;
   justify-content: center;
   p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
   font-family: 'Raleway-Bold';
   font-size: 28px;
   .job{
@@ -82,12 +90,18 @@ background-color: rgb(255, 255, 255);
   }
   .presentation {
     font-family: 'Raleway-Light';
-    font-size: 20px;
+    font-size: 18px;
   }
   }
 };
 
 .cls-1 {
+  stroke-dasharray: 2250;
+  stroke-dashoffset: 2250;
+  animation: draw 4.5s linear forwards;
+}
+
+.cls-2 {
   stroke-dasharray: 2250;
   stroke-dashoffset: 2250;
   animation: draw 4.5s linear forwards;
