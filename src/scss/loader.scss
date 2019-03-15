@@ -95,17 +95,19 @@ background-color: rgb(255, 255, 255);
   }
 };
 
-// .cls-1 {
-//   stroke-dasharray: 2250;
-//   stroke-dashoffset: 2250;
-//   animation: draw 4.5s linear forwards;
-// }
+.cls-1:hover {
+  stroke-dasharray: 2550;
+  stroke-dashoffset: 2550;
+  animation: draw 4.5s linear forwards;
+ 
+}
 
 .cls-2 {
   stroke-dasharray: 2250;
   stroke-dashoffset: 2250;
   animation: draw 4.5s linear forwards;
 }
+
 
 @keyframes draw {
   to {
@@ -126,3 +128,29 @@ background-color: rgb(255, 255, 255);
     position: absolute;
   }
 };
+
+.links {
+  display: flex;
+  position: fixed;
+  width: 100px;
+  height: 80px;
+  right: 30px;
+  bottom: 20px;
+
+ .github{
+    position: absolute;
+    height: 20px;
+    &__img{
+      width: 40px;
+      padding-right: 8px;
+    }
+  }
+
+  .linkedin{
+    position: absolute;
+    height: 20px;
+    &__img{
+      width: 40px;
+    }
+  }
+}
