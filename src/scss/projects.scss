@@ -36,10 +36,13 @@
   position: relative;
   &__svg {
     position: sticky;
-    width: 300px;
+    width: 260px;
     height: 280px;
-    left: calc( 50% - 150px);
+    left: calc( 50% - 130px);
     top: calc( 50% - 150px);
+    svg {
+      width: 100%;
+    }
     &--properage {
       top: calc( 50% - 120px);
       height: 290px;
@@ -51,22 +54,22 @@
   &__text {
     position: sticky;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 45px;
     top: 45%;
     h2{
       position: absolute;
-      right: calc(25% - 100px);
+      right: calc(20% - 100px);
     }
   }
 }
 
 .project__pres {
     position: sticky;
-    top: 35%;
+    top: 30%;
     font-weight: 800;
     width: 200px;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 14%;
     margin-bottom: 10px;
     &--text {
     position: absolute;
@@ -80,3 +83,20 @@
 .hydropres {
   top: 45%;
 }
+
+.more__container {
+  position: absolute;
+  right: calc(50% - 70px);
+  width: 140px;
+  height: 40px;
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 45px;
+  text-align: center;
+  bottom: 60px;
+  p {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+}
+
