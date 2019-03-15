@@ -62,7 +62,7 @@ background-color: rgb(255, 255, 255);
 }
 
 .portfolio {
-  position: absolute;
+  position: fixed;
   right: 45px;
   top: 60px;
   width: 70px;
@@ -95,11 +95,11 @@ background-color: rgb(255, 255, 255);
   }
 };
 
-.cls-1 {
-  stroke-dasharray: 2250;
-  stroke-dashoffset: 2250;
-  animation: draw 4.5s linear forwards;
-}
+// .cls-1 {
+//   stroke-dasharray: 2250;
+//   stroke-dashoffset: 2250;
+//   animation: draw 4.5s linear forwards;
+// }
 
 .cls-2 {
   stroke-dasharray: 2250;
