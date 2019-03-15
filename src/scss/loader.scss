@@ -96,6 +96,13 @@
   }
 };
 
+.cls-1 {
+  fill: black;
+  stroke: rgb(255, 255, 255);
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
+}
+
 .cls-1:hover {
   stroke-dasharray: 2550;
   stroke-dashoffset: 2550;
