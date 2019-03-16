@@ -13,6 +13,7 @@
 .body {
   overflow: hidden;
   width: 100vw;
+  scroll-snap-type: proximity;
 }
 
 .face__container {
@@ -65,8 +66,12 @@
   z-index: 3;
   position: fixed;
   right: 45px;
-  top: 60px;
-  width: 70px;
+  top: 40px;
+  width: 50px;
+  @include large {
+    width: 70px;
+    top: 60px;
+  }
  img {
    width: 100%;
  }
