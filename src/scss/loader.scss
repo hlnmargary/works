@@ -13,8 +13,10 @@
 .body {
   overflow: hidden;
   width: 100vw;
+  height: 500vh;
   scroll-snap-type: proximity;
 }
+
 
 .face__container {
   position: absolute;
@@ -65,12 +67,13 @@
 .portfolio {
   z-index: 3;
   position: fixed;
-  right: 45px;
+  right: 25px;
   top: 40px;
   width: 50px;
   @include large {
     width: 70px;
     top: 60px;
+    right: 45px;
   }
  img {
    width: 100%;
@@ -102,7 +105,7 @@
 };
 
 .cls-1 {
-  fill: black;
+  fill: rgb(0, 0, 0);
   stroke: rgb(255, 255, 255);
   stroke-miterlimit: 10;
   stroke-width: 1px;
@@ -144,17 +147,27 @@
 
 .links {
   z-index: 4;
-  display: flex;
   position: fixed;
-  width: 100px;
-  height: 80px;
-  right: 30px;
-  bottom: 20px;
+  width: 50px;
+  height: 90px;
+  right: 10px;
+  bottom: 50px;
+  @include large {
+    display: flex;
+    position: fixed;
+    width: 100px;
+    height: 80px;
+    right: 30px;
+    bottom: 20px;
+  }
 
  .github{
     position: absolute;
-    height: 20px;
+    @include large {
+      height: 20px;
+    }
     &__img{
+      padding-bottom: 8px;
       width: 40px;
       padding-right: 8px;
     }
