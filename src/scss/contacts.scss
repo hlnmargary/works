@@ -1,0 +1,33 @@
+.contacts {
+  height: 65vh;
+  width: 100%;
+  font-family: 'Raleway-bold';
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    font-size: 30px;
+    margin-top: 240px;
+    @include large {
+      width: 600px;
+      font-size: 40px;
+      margin-top: 240px;
+    }
+  }
+  &__container {
+    margin: 0 auto;
+    width: 300px;
+    font-size: 16px;
+    margin-top: 60px;
+    text-align: center;
+    @include large {
+      width: 600px;
+      font-size: 20px;
+    }
+    
+    &--email{
+      margin-bottom: 8px;
+    }
+  }
+}
+
