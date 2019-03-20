@@ -36,6 +36,7 @@ BACKGROUNDS
 //   background-size: cover;
 // }
 
+
 main {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
@@ -92,7 +93,7 @@ main {
     font-weight: bold;
     font-size: 45px; 
     @include large {
-    top: calc(45% - 100px);
+    top: calc(65% - 100px);
     }
     h2{
       color: white;
@@ -111,7 +112,7 @@ main {
 
 .project__pres {
     position: sticky;
-    top: 55%;
+    top: 50%;
     left: calc(50% - 125px);
     font-weight: 800;
     width: 250px;
@@ -123,7 +124,7 @@ main {
       font-size: 18px;
       font-weight: 800;
       width: 250px;
-      height: 200px;
+      height: 280px;
       justify-content: space-between;
       margin-left: 14%;
       margin-bottom: 10px;
@@ -131,7 +132,6 @@ main {
       top: 30%;
     }
     &--text {
-    position: absolute;
     span {
       padding-bottom: 30px;
       font-weight: 400;
@@ -140,11 +140,35 @@ main {
 }
 
 .hydropres {
-  top: 55%;
+  top: 50%;
   @include large {
     top: 40%;
   }
 }
+
+.technos {
+  display: flex;
+  width: 250px;
+  left: 30px;
+  left: calc(23% - 125px);
+  height: 30px;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 25px;
+  justify-content: flex-start;
+  .techno {
+    margin-right: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 45px;
+    height: 20px;
+    width: 200px;
+    color: white;
+    padding-top: 10px;
+  }
+}
+
+
 
 .more__container {
   position: absolute;

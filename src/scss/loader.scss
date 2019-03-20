@@ -10,14 +10,17 @@
   }
 };
 
-.body {
-  overflow: hidden;
-  width: 100vw;
-  height: 500vh;
-  scroll-snap-type: proximity;
-  
+.all {
+  background-color: white;
 }
 
+.white {
+  color:rgb(255, 255, 255);
+}
+
+.bwhite {
+  background-color: rgb(0, 0, 0);
+}
 
 .face__container {
   position: absolute;
@@ -38,7 +41,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-color: rgb(255, 255, 255);
+
 };
 
 .scrollTable {
@@ -80,6 +83,8 @@
    width: 100%;
  }
 };
+
+
 
 .face__text{
   // transition: opacity 10s;
