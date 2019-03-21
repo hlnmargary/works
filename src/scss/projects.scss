@@ -1,5 +1,5 @@
 
-BACKGROUNDS
+// BACKGROUNDS
 
 // .banal {
 //    background-color: #fff696;
@@ -96,11 +96,10 @@ main {
     top: calc(65% - 100px);
     }
     h2{
-      color: white;
-      position: absolute;
-      top: -120px;
-      font-size: 25px;
+      display: none;
       @include large {
+        display: block;
+        position: absolute;
         top: 50%;
         right: 250px;
         color: black;
