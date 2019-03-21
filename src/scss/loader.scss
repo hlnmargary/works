@@ -10,17 +10,6 @@
   }
 };
 
-.all {
-  background-color: white;
-}
-
-.white {
-  color:rgb(255, 255, 255);
-}
-
-.bwhite {
-  background-color: rgb(0, 0, 0);
-}
 
 .face__container {
   position: absolute;
@@ -79,8 +68,18 @@
     top: 60px;
     right: 45px;
   }
- img {
-   width: 100%;
+ span {
+   display: block;
+   font-size: 35px;
+   font-weight: 600;
+
+   &.year {
+     position: relative;
+      font-size: 70px;
+      font-weight: 700;
+      transform: rotate(90deg);
+      left: 20px;
+   }
  }
 };
 
@@ -128,6 +127,9 @@
   stroke-dasharray: 2250;
   stroke-dashoffset: 2250;
   animation: draw 4.5s linear forwards;
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 2;
 }
 
 
@@ -138,17 +140,16 @@
 };
 
 .header__scroll {
-  margin-left: 30px;
   width: 10vw;
-  bottom: 80px;
+  bottom: 150px;
   display: none;
-  position: fixed;
-  img {
-    width: 20px;
-  }
+  left: -20px;
   @include medium{
     display: block;
     position: absolute;
+    transform: rotate(-90deg);
+    font-size: 25px;
+    font-weight: 700;
   }
 };
 
@@ -215,3 +216,14 @@
   }
 }
 
+.demo-icon {
+  font-family: "linkedun";
+  font-style: normal;
+  font-weight: normal;
+  &.icon-github-circled:before { 
+    content: '\f09b'; 
+  } 
+  &.icon-linkedin-circled:before { 
+    content: '\f319'; 
+  } 
+}

@@ -1,0 +1,42 @@
+
+.darkButton {
+  z-index: 100;
+  background-color: black;
+  color: white;
+  font-weight: 700px;
+  padding: 5px 15px;
+  position: fixed;
+  margin: 10px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  border-radius: 45px;
+  text-decoration: none;
+}
+
+
+.darkmode {
+  background-color: black;
+  p, h1, h2, span {
+    color: white;
+  }
+  .technos {
+    .techno {
+      // border: solid 2px rgb(255, 255, 255);
+      background-color: white;
+      // color: rgb(255, 255, 255);
+      color: black;
+    }
+  }
+  .face path {
+    stroke: white;
+  }
+  .darkButton{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  
+  }
+}
+
+
+
+
