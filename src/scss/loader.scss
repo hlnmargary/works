@@ -69,16 +69,24 @@
     right: 45px;
   }
  span {
-   display: block;
-   font-size: 35px;
-   font-weight: 600;
-
+  display: block;
+  font-size: 25px;
+  font-weight: 600; 
+   @include large {
+    font-size: 35px;
+    font-weight: 600; 
+   }
    &.year {
-     position: relative;
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    transform: rotate(90deg);
+    left: 10px;
+     @include large {
       font-size: 70px;
       font-weight: 700;
-      transform: rotate(90deg);
       left: 20px;
+     }
    }
  }
 };
