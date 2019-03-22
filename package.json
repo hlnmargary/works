@@ -24,12 +24,6 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "fire": "^0.55.1",
-    "rellax": "^1.8.0",
-    "scrollreveal": "^4.0.5",
-    "snapsvg": "^0.5.1",
-    "style": "0.0.3",
-    "waypoint": "^0.2.8",
-    "waypoints": "^4.0.1"
+    "style": "0.0.3"
   }
 }
