@@ -19,7 +19,7 @@
   "homepage": "https://github.com/hlnmargary/works#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
-    "parcel-bundler": "^1.11.0",
+    "parcel-bundler": "^1.12.3",
     "sass": "^1.17.0"
   },
   "dependencies": {
