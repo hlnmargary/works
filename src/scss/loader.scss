@@ -99,20 +99,21 @@
   position: absolute;
   text-align: left;
   width: 220px;
-  left: calc(50% - 120px);
+  left: calc(50% - 115px);
   top: 50%;
   justify-content: center;
   p {
   margin-bottom: 5px;
-  font-family: 'Raleway-Bold';
-  font-size: 28px;
+  font-family: 'Raleway-Medium';
+  font-size: 22px;
   .job{
-    font-family: 'Raleway-Semibold';
+    margin-top: 10px;
+    font-family: 'Raleway-Bold';
     font-size: 20px;
   }
   .presentation {
     font-family: 'Raleway-Light';
-    font-size: 18px;
+    font-size: 16px;
   }
   }
 };
