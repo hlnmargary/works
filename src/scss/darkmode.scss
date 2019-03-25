@@ -19,13 +19,14 @@
   p, h1, h2, span {
     color: white;
   }
-  .technos {
+  .project__text--technos {
     .techno {
-      // border: solid 2px rgb(255, 255, 255);
       background-color: white;
-      // color: rgb(255, 255, 255);
-      color: black;
+      p{
+        color: black;
+      }
     }
+
   }
   .bio__img path {
     stroke: white;
