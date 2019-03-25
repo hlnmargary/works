@@ -10,14 +10,11 @@
   }
 };
 
-
 .cls-1 {
-  stroke-dasharray: 2250;
-  stroke-dashoffset: 2250;
-  animation: draw 4.5s linear forwards;
   fill: rgb(0, 0, 0);
   stroke: rgb(255, 255, 255);
-  stroke-width: 0.4;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
 }
 
 .cls-1:hover {
@@ -36,14 +33,6 @@
   stroke-width: 2;
 }
 
-// .cls-1:hover {
-//   stroke-dasharray: 2250;
-//   stroke-dashoffset: 2250;
-//   animation: draw 4.5s linear forwards;
-//   fill: none;
-//   stroke: rgb(0, 0, 0);
-//   stroke-width: 0.5;
-// }
 
 @keyframes draw {
   to {
@@ -52,10 +41,10 @@
 };
 
 
-
 ////////
 .all{
   font-family: 'Raleway';
+  overflow-x: hidden;
 }
 
 
@@ -130,3 +119,46 @@ header {
   }
 }
 
+
+  // .links {
+  //   @include large {
+  //     display: flex;
+  //     position: fixed;
+  //     width: 150px;
+  //     height: 80px;
+  //     right: 30px;
+  //     bottom: 20px;
+  //   }
+  
+  //  .github {
+  //     @include large {
+  //       position: absolute;
+  //       height: 20px;
+  //     }
+  //     @include large {
+  //       &__img {
+  //         padding-bottom: 8px;
+  //         width: 40px;
+  //         padding-right: 8px;
+  //       }
+  //     }
+  //   }
+  
+  //   .linkedin{
+  //     position: absolute;
+  //     height: 20px;
+  //     &__img{
+  //       width: 40px;
+  //     }
+  //   }
+  
+  //   .cv{
+  //     position: absolute;
+  //     height: 20px;
+  //     &__img{
+  //       padding-bottom: 8px;
+  //       width: 40px;
+  //       padding-right: 8px;
+  //     }
+  //   }
+  // }
