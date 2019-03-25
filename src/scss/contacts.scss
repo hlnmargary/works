@@ -23,11 +23,17 @@
     @include large {
       width: 600px;
       font-size: 20px;
-    }
-    
-    &--email{
+    }  
+    &--email  {
       margin-bottom: 8px;
     }
-  }
+    &--numero{
+      margin-bottom: 8px;
+    }
+    &--cv {
+      color: rgb(0, 0, 0);
+      text-decoration-line: underline;
+    } 
+   
+  } 
 }
-

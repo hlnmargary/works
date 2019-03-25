@@ -81,8 +81,7 @@
 .more__container {
   position: absolute;
   right: calc(50% - 70px);
-  width: 140px;
-  height: 40px;
+  padding: 10px 25px;
   border: solid 2px rgb(0, 0, 0);
   border-radius: 45px;
   text-align: center;
@@ -93,7 +92,6 @@
   p {
     font-size: 18px;
     font-weight: 700;
-    padding-top: 10px;
   }
 }
 

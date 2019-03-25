@@ -120,45 +120,24 @@ header {
 }
 
 
-  // .links {
-  //   @include large {
-  //     display: flex;
-  //     position: fixed;
-  //     width: 150px;
-  //     height: 80px;
-  //     right: 30px;
-  //     bottom: 20px;
-  //   }
-  
-  //  .github {
-  //     @include large {
-  //       position: absolute;
-  //       height: 20px;
-  //     }
-  //     @include large {
-  //       &__img {
-  //         padding-bottom: 8px;
-  //         width: 40px;
-  //         padding-right: 8px;
-  //       }
-  //     }
-  //   }
-  
-  //   .linkedin{
-  //     position: absolute;
-  //     height: 20px;
-  //     &__img{
-  //       width: 40px;
-  //     }
-  //   }
-  
-  //   .cv{
-  //     position: absolute;
-  //     height: 20px;
-  //     &__img{
-  //       padding-bottom: 8px;
-  //       width: 40px;
-  //       padding-right: 8px;
-  //     }
-  //   }
-  // }
+  .links {
+    display: none;
+    @include medium {
+      display: block;
+      z-index: 100;
+      position: fixed;
+      width: 110px;
+      height: 60px;
+      right: 30px;
+      bottom: 20px;
+      justify-content: space-around;
+     
+   .github {
+        position: absolute;
+        height: 20px;
+    }
+    .linkedin {
+      position: absolute;
+    }
+  }
+  }
