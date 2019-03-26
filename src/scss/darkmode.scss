@@ -13,6 +13,22 @@
   text-decoration: none;
 }
 
+.crazyButton {
+  z-index: 100;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-weight: 600px;
+  padding: 5px 15px;
+  position: fixed;
+  margin-left:28px;
+  margin-top:58px;
+  font-family: 'Raleway';
+  font-size: 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+
 
 .darkmode {
   transition: all 1s ease-out;
@@ -45,6 +61,15 @@
   }
   .links__linkedin{
     fill: rgb(255, 254, 254);
+  }
+  .linksend__github {
+    fill: rgb(255, 255, 255);
+  }
+  .linksend__linkedin{
+    fill: rgb(255, 254, 254);
+  }
+  .contacts__container--cv{
+    color: rgb(255, 255, 255);
   }
 }
 
@@ -80,6 +105,15 @@
   }
   .links__linkedin{
     fill: rgb(0, 0, 0);
+  }
+  .linksend__github {
+    fill: rgb(0, 0, 0);
+  }
+  .linksend__linkedin{
+    fill: rgb(0, 0, 0);
+  }
+  .contacts__container--cv{
+    color: rgb(0, 0, 0);
   }
 }
 
